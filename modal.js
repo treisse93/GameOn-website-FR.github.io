@@ -94,7 +94,7 @@ function launchModalHidden() {
 
 // déclare fonction prénom
 function checkFirst(first) {
-  let firstRegExp = new RegExp("(\\D+){2,}");
+  let firstRegExp = new RegExp("(\\D+){2,}");//regexp contient pas de caractère numérique et minimum 2
   if (first === "") {
     showErrorMessageFirst(`Le champ Prénom est vide`); // message erreur si fonction vide
     tagFirst.classList.add("Redborder")// insère une bordure rouge autour de la case
@@ -126,7 +126,7 @@ function showErrorMessageFirst(messageFirst) {
 
 // déclare fonction nom
 function checkLast(last) {
-  let lastRegExp = new RegExp("(\\D+){2,}");
+  let lastRegExp = new RegExp("(\\D+){2,}");//regexp contient pas de caractère numérique et minimum 2
   if (last === "") {
     showErrorMessageLast(`Le champ nom est vide`);// message erreur si fonction vide
     tagLast.classList.add("Redborder")// insère une bordure rouge autour de la case
